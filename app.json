@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "TrialGuard",
+    "slug": "trialguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "trialguard",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F8FBFD",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.trialguard.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "TrialGuard reads the trial confirmation screenshot you choose so it can find the renewal date and amount.",
+        "NSCameraUsageDescription": "TrialGuard uses the camera so you can capture a trial confirmation you cannot screenshot.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.trialguard.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#EFF9FF",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F8FBFD",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 84
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#159DF7"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "TrialGuard reads the trial confirmation screenshot you choose so it can find the renewal date and amount.",
+          "cameraPermission": "TrialGuard uses the camera so you can capture a trial confirmation you cannot screenshot."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
