@@ -4,7 +4,7 @@
   "main": "expo-router/entry",
   "private": true,
   "scripts": {
-    "start": "node init && expo start",
+    "start": "expo start",
     "ios": "expo start --ios",
     "android": "expo start --android",
     "web": "expo start --web",
